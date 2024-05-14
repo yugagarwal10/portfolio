@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+</head>
+<style>
+    *{
+        margin: 0px;
+    }
+    body{
+        background-color: black;
+    }
+    .navbar{
+        height: 400px;
+        width:300px;
+        border: 2px solid white;
+        margin-left:200px;
+        margin-top: 50px;
+        border:border-box;
+        box-shadow: 2px 2px 10px white,-2px -2px 10px white;
+        animation: effect 2s ease-in-out;
+        position: fixed;
+    }
+    @keyframes effect{
+        0%{
+        transform: translateX(-100%);
+        opacity: 0;
+        }
+        100%{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+    .navbar img{
+        height: 200px;
+        width: 200px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 45px;
+        margin-top: 30px;
+        border-radius: 50%;
+    }
+    .info{
+        font-family:cambria;
+        color: white;
+        display: inline;
+        text-decoration: none;
+    }
+    .phone{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .phone p{
+          font-size:15px;
+          margin-top:-2px;
+          margin-left: 3px;
+    }
+    .email{
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          margin-top: 20px;
+    }
+    .email p{
+        margin-left: 3px;
+        margin-top: -3px;
+    }
+    .github{
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          margin-top: 20px;
+    }
+    .github a{
+        margin-left: 3px;
+        margin-top: -4px;
+        color: white;
+        text-decoration: none;
+    }
+    .linkedin{
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          margin-top: 20px;
+    }
+    .linkedin a{
+        margin-left: 3px;
+        margin-top: -4px;
+        color: white;
+        text-decoration: none;
+    }
+    .mainpage{
+        height: 650px;
+        width: 700px;
+        border: border-box;
+        border: 2px solid white;
+        margin-left: 550px;
+        margin-top:30px;
+        box-shadow: 2px 2px 10px white,-2px -2px 10px white;
+        animation: main 2s ease-in-out;
+        background-attachment: scroll;
+    }
+    @keyframes main{
+        0%{
+        transform: translateY(-100%);
+        opacity: 0;
+        }
+        100%{
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+    .topbar{
+        margin-left: 350px;
+        margin-top:25px;
+    }
+    .topbar a{
+        color: white;
+        margin-left:20px;
+        text-align: center;
+        justify-content: space-between;
+        text-decoration: none;
+    }
+    a:hover{
+        animation: und 1s;
+    }
+    @keyframes und{
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+    .main{
+        margin-top: 100px;
+        text-align: left;
+        animation: abc 2s ease-in-out;
+    }
+    @keyframes abc{
+        0%{
+            transform: translateX(-50%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+    .hello{
+        color: whitesmoke;
+        font-size:35px;
+        margin-left:78px;
+        text-align: left;
+    }
+    .name{
+        color: white;
+        font-size:50px;
+        font-family:century;
+        margin-left: 80px;
+        text-align: left;
+        text-shadow: 2px 2px 10px white;
+    }
+    .web{
+        font-size: 35px;
+        color: whitesmoke;
+        margin-left: 75px;
+        margin-top: 10px;
+    }
+    .basic{
+        font-size: 18px;
+        color: white;
+        margin-left:50px;
+        max-width: 500px;
+        text-align:left;
+        margin-top: 7px;
+    }
+    .symbol{
+        color:white;
+        margin-top: 50px;
+        margin-left: 70px;
+        gap: 35px;
+        font-size: 35px;
+        display: flex;
+    }
+    button{
+        text-align: center;
+        align-items:center;
+        justify-content: center;
+        font-size: 15px;
+        margin-left: 70px;
+        margin-top: 25px;
+        width: 100px;
+        height: 30px;
+    }
+    .resume{
+        border: border-box;
+        font-family: century;
+        border-radius: 30px;
+    }
+    button:hover{
+        width: 150px;
+        background-color:grey;
+        height:50px;
+    }
+    .second{
+        height:600px;
+        width: 700px;
+        border: border-box;
+        border: 2px solid white;
+        box-shadow: 2px 2px 10px white,-2px -2px 10px white;
+        margin-top: 30px;
+        margin-left: 550px;
+    }
+    .second{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .about{
+        color: white;
+        margin-top: 15px;
+        font-family: century;
+        font-size: 60px;
+        text-decoration: 2px underline white;
+        text-shadow: 2px 2px 5px white;
+    }
+    .pro{
+        color: white;
+        margin-left: 50px;
+        max-width: 600px;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .fess{
+        color: white;
+        margin-left: 50px;
+        max-width: 600px;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .skills{
+        height:550px;
+        width: 700px;
+        border: border-box;
+        border: 2px solid white;
+        box-shadow: 2px 2px 10px white,-2px -2px 10px white;
+        margin-top: 30px;
+        margin-left: 550px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .skill{
+        color: white;
+        margin-top: 15px;
+        font-family: century;
+        font-size: 60px;
+        text-decoration: 2px underline white;
+        text-shadow: 2px 2px 5px white;
+    }
+    .soft p{
+        color: whitesmoke;
+        font-size: 30px;
+        font-family:century;
+        text-align: left;
+        margin-left: 80px;
+        margin-top: 30px;
+        text-decoration: underline;
+    }
+    .soft ul{
+        color: white;
+        margin-top:20px;
+        text-align: left;
+        font-size: 20px;
+        max-width: 200px;
+        margin-left:30px;
+    }
+    ul li{
+        margin-bottom:10px;
+    }
+    .hard p{
+        color: whitesmoke;
+        font-size: 30px;
+        font-family:century;
+        text-align: right;
+        text-decoration: underline;
+        margin-top: -384px;
+        margin-right: 80px;
+    }
+    .hard ul{
+        color: white;
+        margin-top:20px;
+        text-align:left;
+        font-size: 20px;
+        max-width: 150px;
+        margin-left: 430px;
+        margin-right: 50px
+    }
+    ul li{
+        margin-bottom:10px;
+    }
+    .history{
+        height:500px;
+        width: 700px;
+        border: border-box;
+        border: 2px solid white;
+        box-shadow: 2px 2px 10px white,-2px -2px 10px white;
+        margin-top: 30px;
+        margin-left: 550px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .his{
+        color: white;
+        margin-top: 15px;
+        font-family: century;
+        font-size: 60px;
+        text-decoration: 2px underline white;
+        text-shadow: 2px 2px 5px white;
+    }
+    .edu{
+        color: white;
+        margin-top: 15px;
+        font-family: century;
+        font-size: 30px;
+        text-decoration: 2px underline white;
+        text-shadow: 2px 2px 5px white;
+    }
+    .history ul{
+        color: whitesmoke;
+        margin-top: 15px;
+        max-width: 600px;
+        text-align: center;
+        margin-left:20px;
+    }
+    .teacher{
+        color: white;
+        margin-top: 15px;
+        font-family: century;
+        font-size: 30px;
+        text-decoration: 2px underline white;
+        text-shadow: 2px 2px 5px white;
+        margin-top: 40px;
+    }
+</style>
+<body>
+    <div class="navbar">
+       <img src="C:\Users\yugag\OneDrive\Documents\yug photo.jpg">
+       <div class="info">
+          <div class="phone">
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>:-8160508314</p>
+          </div>
+          <div class="email">
+            <i class="fa-solid fa-envelope"></i>
+            <p>yugagarwal214@gmail.com</p>
+          </div>
+          <div class="github">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/yugagarwal10">yugagarwal10</a>
+          </div>
+          <div class="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/yug-agarwal-50019a291">yug agarwal</a>
+          </div>
+       </div>
+    </div>
+       <div class="mainpage">
+        <div class="topbar">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SKILLS</a>
+            <a href="#">HISTORY</a>
+       </div>
+       <div class="main">
+          <p class="hello">Hello,It's Me</p>
+          <p class="name">Yug Agarwal</p>
+          <p class="web">And I'm A Web Developer</p>
+          <p class="basic">Enthusiastic and motivated software developer eager to kick-start a career in the tech industry. knowing basics in foundational programming languages like Python and c, with a strong grasp of essential concepts such as variables, loops, and functions. Recently completed coursework in web development and database management, gaining hands-on experience in building basic websites and managing data.</p>
+       </div>
+       <div class="symbol">
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+       </div>
+       <button class="resume">Resume</button>
+     </div> 
+     <div class="second">
+         <p class="about">About Me</p>
+         <p class="pro">Enthusiastic and motivated software developer eager to kick-start a career in the tech industry. knowing basics in foundational programming languages like Python and c, with a strong grasp of essential concepts such as variables, loops, and functions. Recently completed coursework in web development and database management, gaining hands-on experience in building basic websites and managing data. Possess a keen eye for detail and a passion for learning new technologies. Excited to apply classroom knowledge to real-world projects, collaborate with experienced professionals, and expand skills in a supportive internship environment. Ready to contribute fresh perspectives and dedication to achieve team goals.
+        <p class="fess">As a dedicated software developer, I am eager to immerse myself in new environments, continually learn, and offer innovative solutions to challenges. With a foundational understanding of programming languages like Python and C, as well as basic proficiency in web development and database management, I am poised to leverage my skills for the benefit of the company's growth. I am enthusiastic about the opportunity to contribute my knowledge and expertise to drive success.</p>
+        </p>
+     </div>
+     <div class="skills">
+          <p class="skill">Skills</p>  
+          <div class="soft">
+            <p>Soft Skills</p>
+            <ul>
+                <li>Communication And Collaboration</li>
+                <li>Teamwork And Interpersonal Skills</li>
+                <li>Analytical And Logical Thinking</li>
+                <li>Problem Solving And Critical Thinking</li>
+                <li>Adaptability And Flexibility</li>
+                <li>Patience And Perseverance</li>
+            </ul>
+          </div>
+          <div class="hard">
+            <p class="hard">Hard Skills</p>
+            <ul>
+                <li>Programming Languages (e.g. Python, C)
+                </li>
+                <li>Database Management (e.g. SQL, MySQL, Oracle)</li>
+                <li>Web Development (e.g. HTML, CSS)</li>
+                <li>Version Control (e.g. Github)</li>
+            </ul>
+          </div>
+     </div>
+     <div class="history">
+        <p class="his">History</p>
+        <p class="edu">Education</p>
+        <ul>
+            <li>Completed high school education from Agarwal Vidhya Vihar.Currently pursuing Bachelor of Computer Applications (BCA) at SD Jain International College..</p></li>
+        </ul>
+        <p class="teacher">Assistant teacher</p>
+        <ul>
+            <li>
+                Served as a Teacher's Assistant for over 2 years.
+                Facilitated students in overcoming challenges and
+                achieving positive outcomes.
+                Acquired skills in managing critical situations and
+                performing under pressure.</li>
+        </ul>
+            </div>
+            <script>
+                function scrollToSection(sectionId) {
+                    const section = document.querySelector(sectionId);
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+        
+                // Attach click event listeners to navigation links
+                document.addEventListener("DOMContentLoaded", function() {
+                    const aboutLink = document.querySelector('a[href=".about"]');
+                    const historyLink = document.querySelector('a[href=".history"]');
+        
+                    if (aboutLink) {
+                        aboutLink.addEventListener('click', function(event) {
+                            event.preventDefault(); // Prevent default link behavior
+                            scrollToSection('second'); // Scroll to the 'about' section
+                        });
+                    }
+        
+                    if (historyLink) {
+                        historyLink.addEventListener('click', function(event) {
+                            event.preventDefault(); // Prevent default link behavior
+                            scrollToSection('history'); // Scroll to the 'history' section
+                        });
+                    }
+                });
+            </script>
+</body>
+</html>
